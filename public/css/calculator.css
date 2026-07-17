@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top left,#2563eb22,transparent 30%),
+    radial-gradient(circle at bottom right,#06b6d422,transparent 30%),
+    #020617;
+    color:#fff;
+}
+
+.container{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+h1{
+    font-weight:700;
+}
+
+p{
+    letter-spacing:1px;
+}
+
+/* Card */
+
+.calculator-card{
+    background:rgba(17,24,39,.95);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    backdrop-filter:blur(20px);
+    padding:30px;
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+    transition:.3s;
+}
+
+.calculator-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 60px rgba(37,99,235,.25);
+}
+
+/* Header */
+
+.calculator-title{
+    margin-bottom:25px;
+}
+
+.calculator-title h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+.calculator-title p{
+    color:#94a3b8;
+    margin-top:5px;
+    margin-bottom:0;
+}
+
+/* Display */
+
+.calculator-display{
+    background:linear-gradient(145deg,#0f172a,#1e293b);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:22px;
+    min-height:140px;
+    margin-bottom:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    box-shadow:
+    inset 0 2px 10px rgba(255,255,255,.03),
+    inset 0 -8px 20px rgba(0,0,0,.45);
+}
+
+.history{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    text-align:right;
+
+    min-height:22px;
+
+    margin-bottom:8px;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    text-overflow:ellipsis;
+
+}
+
+.expression{
+    color:#94a3b8;
+    font-size:22px;
+    text-align:right;
+    min-height:32px;
+    word-break:break-word;
+}
+
+.result{
+    color:#fff;
+    font-size:48px;
+    font-weight:700;
+    text-align:right;
+    line-height:1.1;
+    word-break:break-word;
+}
+
+/* Grid */
+
+.calculator-buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+/* Button */
+
+.calc-btn{
+    height:70px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(145deg,#374151,#4b5563);
+    color:#fff;
+    font-size:24px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+    box-shadow:
+    0 8px 18px rgba(0,0,0,.30),
+    inset 0 1px 1px rgba(255,255,255,.08);
+}
+
+.calc-btn:hover{
+    transform:translateY(-4px);
+}
+
+.calc-btn:active{
+    transform:scale(.95);
+}
+
+.number{
+    background:linear-gradient(145deg,#374151,#4b5563);
+}
+
+.number:hover{
+    background:linear-gradient(145deg,#475569,#64748b);
+}
+
+.operator{
+    background:linear-gradient(145deg,#2563eb,#1d4ed8);
+}
+
+.operator:hover{
+    background:linear-gradient(145deg,#3b82f6,#2563eb);
+}
+
+.equal{
+    background:linear-gradient(145deg,#16a34a,#15803d);
+}
+
+.equal:hover{
+    background:linear-gradient(145deg,#22c55e,#16a34a);
+}
+
+.clear{
+    background:linear-gradient(145deg,#dc2626,#b91c1c);
+}
+
+.clear:hover{
+    background:linear-gradient(145deg,#ef4444,#dc2626);
+}
+
+.backspace{
+    background:linear-gradient(145deg,#f59e0b,#d97706);
+}
+
+.backspace:hover{
+    background:linear-gradient(145deg,#fbbf24,#f59e0b);
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+    .calculator-card{
+        margin-bottom:30px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .calculator-title h2{
+        font-size:22px;
+    }
+
+    .expression{
+        font-size:18px;
+    }
+
+    .result{
+        font-size:36px;
+    }
+
+    .calc-btn{
+        height:60px;
+        font-size:20px;
+    }
+
+}   
+
+/* Age Calculator */
+
+.age-form label{
+    color:#cbd5e1;
+    margin-bottom:8px;
+}
+
+.age-form input{
+    background:#1e293b;
+    color:#fff;
+    border:1px solid #334155;
+    border-radius:12px;
+    padding:12px;
+}
+
+.age-form input:focus{
+    background:#1e293b;
+    color:#fff;
+    border-color:#2563eb;
+    box-shadow:none;
+}
+
+.age-result{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.result-box{
+    background:#0f172a;
+    border-radius:16px;
+    text-align:center;
+    padding:20px;
+}
+
+.result-box h3{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.result-box span{
+    color:#94a3b8;
+}
+
+@media(max-width:576px){
+
+    .age-result{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.age-details{
+
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.detail-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#0f172a;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+}
+
+.detail-item span{
+
+    color:#94a3b8;
+
+}
+
+.detail-item strong{
+
+    color:#fff;
+
+    font-size:18px;
+
+}
