@@ -13,7 +13,7 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/calculator.css') }}">
+    <link rel="stylesheet" href="/css/calculator.css">
 </head>
 <body>
 
@@ -54,7 +54,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Custom JS -->
-<script src="{{ asset('js/calculator.js') }}"></script>
+<script src="/js/calculator.js"></script>
 
 </body>
 </html>

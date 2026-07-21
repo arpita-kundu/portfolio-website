@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>LibraryMS</title>
-    <link rel="stylesheet" href="{{ asset('css/library.css') }}">
+    <link rel="stylesheet" href="/css/library.css">
 </head>
 <body>
 
@@ -39,7 +39,7 @@
           
         <a href="{{ route('portfolio') }}" class="admin-profile-link">
            <div class="admin-profile">
-                 <img src="{{ asset('images/admin.png') }}" alt="Admin">
+                 <img src="/images/admin.png" alt="Admin">
                 <span>Admin User</span>
             </div>
          </a>

@@ -10,7 +10,7 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="/css/portfolio.css">
 
     <title>Arpita Kundu Portfolio</title>
 </head>
@@ -107,7 +107,7 @@
         <div class="hero-image">
 
             <img
-                src="{{ asset('images/Profilepic.png') }}"
+                src="/images/Profilepic.png"
                 alt="Arpita Kundu"
                 class="profile-img">
 
@@ -349,7 +349,7 @@
 
 </footer>
 
-<script src="{{ asset('js/portfolio.js') }}"></script>
+<script src="/js/portfolio.js"></script>
 
 </body>
 </html>

@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <title>Categories</title>
-    <link rel="stylesheet" href="{{ asset('css/library.css') }}">
+    <link rel="stylesheet" href="/css/library.css">
 </head>
 <body>
 

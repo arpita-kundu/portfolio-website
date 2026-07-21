@@ -8,7 +8,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIWxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
+    <link rel="stylesheet" href="/css/portfolio.css">
     <title>Review &amp; Rating System</title>
 </head>
 <body class="project-page">
@@ -67,6 +67,6 @@
         </aside>
     </main>
 
-    <script src="{{ asset('js/portfolio.js') }}"></script>
+    <script src="/js/portfolio.js"></script>
 </body>
 </html>
